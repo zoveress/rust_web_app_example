@@ -1,6 +1,6 @@
 [package]
 name = "rust-sample-app"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Kostis Kapelonis <kostis@codefresh.io>"]
 edition = "2018"
 
