@@ -7,12 +7,12 @@ fn main() {
     println!("Let's count until infinity!");
 
     // Infinite loop
-    loop {
-        count += 1;
+    //loop {
+        //count += 1;
         //println!("{}", count);
         //println!("Counting: ", count);
-        println!("Current number = {}", count);
-        sleep(Duration::from_secs(5));
+        //println!("Current number = {}", count);
+        //sleep(Duration::from_secs(5));
 
-    }
+    //}
 }
