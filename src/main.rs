@@ -9,7 +9,7 @@ fn main() {
     // Infinite loop
     loop {
         count += 1;
-        println!("{}", count);
+        //println!("{}", count);
         //println!("Counting: ", count);
         println!("Current number = {}", count);
         sleep(Duration::from_secs(5));
