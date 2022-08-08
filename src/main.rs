@@ -1,18 +1,17 @@
-use std::time::Duration;
-use std::thread::sleep;
+use warp::{Filter, Rejection, Reply};
 
+type Result<T> = std::result::Result<T, Rejection>;
 
-fn main() {
-    let mut count = 0u32;
-    println!("Let's count until infinity!");
+#[tokio::main]
+async fn main() {
+    let health_route = warp::path!("health").and_then(health_handler);
 
-    // Infinite loop
-    //loop {
-        //count += 1;
-        //println!("{}", count);
-        //println!("Counting: ", count);
-        //println!("Current number = {}", count);
-        //sleep(Duration::from_secs(5));
+    let routes = health_route.with(warp::cors().allow_any_origin());
 
-    //}
+    println!("Started server at localhost:8000");
+    warp::serve(routes).run(([0, 0, 0, 0], 8000)).await;
+}
+
+async fn health_handler() -> Result<impl Reply> {
+    Ok("OK")
 }

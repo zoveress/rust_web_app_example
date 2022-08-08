@@ -1,10 +1,11 @@
 [package]
-name = "rust-sample-app"
+name = "rust_web_app_example"
 version = "0.1.1"
-authors = ["Kostis Kapelonis <kostis@codefresh.io>"]
-edition = "2018"
+authors = ["Zoltan Veress"]
+edition = "2022"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.7.3"
+tokio = { version = "0.2", features = ["macros", "rt-threaded"] }
+warp = "0.2"
