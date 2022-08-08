@@ -1,8 +1,9 @@
 use std::time::Duration;
 use std::thread::sleep;
-let mut count = 0u32;
+
 
 fn main() {
+    let mut count = 0u32;
     println!("Let's count until infinity!");
 
     // Infinite loop
