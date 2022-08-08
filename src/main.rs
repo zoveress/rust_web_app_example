@@ -12,7 +12,7 @@ fn main() {
         println!("{}", count);
         //println!("Counting: ", count);
         println!("Current number = {}", count);
-        sleep(Duration::from_millis(5));
+        sleep(Duration::from_secs(5));
 
     }
 }
