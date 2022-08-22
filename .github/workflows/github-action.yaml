@@ -11,4 +11,4 @@ jobs:
       with:
         url: "http://gitlab.com"
         token: ${{ secrets.GITLABAPI }}
-        project_id: 38366146
+        project_id: 37958657
