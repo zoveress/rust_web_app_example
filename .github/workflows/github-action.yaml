@@ -13,3 +13,4 @@ jobs:
         token: ${{ secrets.GITLABAPI }}
         project_id: 37958657
         debug: true
+        ref: 'development'
